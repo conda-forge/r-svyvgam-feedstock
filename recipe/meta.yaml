@@ -1,4 +1,4 @@
-{% set version = "1.2-17" %}
+{% set version = "1.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/svyVGAM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/svyVGAM/svyVGAM_{{ version }}.tar.gz
-  sha256: 28382a534fde6e3d927cd71315960ceaa9578a9ea67bf18a7b28d422cadff0a6
+  sha256: fa26e88779cdc0f968d8f51c41c5be9619e40862751813d83152d174736af753
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
